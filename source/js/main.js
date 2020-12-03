@@ -13,7 +13,8 @@ var mobileMenuButton = document.querySelector('.mobile-menu__button');
 
 function openMobileMenu() {
   if(document.documentElement.clientWidth < 768) {
-   nav.classList.add('nav--hidden');
+    mobileMenuButton.classList.remove('mobile-menu__button--closed');
+    nav.classList.add('nav--hidden');
   }
   mobileMenuButton.addEventListener('click', function() {
     mobileMenuButton.classList.toggle('btn-close');

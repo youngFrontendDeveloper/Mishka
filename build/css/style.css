@@ -832,6 +832,9 @@ svg {
 .mobile-menu__button:active {
   opacity: 0.3;
 }
+.mobile-menu__button--closed {
+  display: none;
+}
 .btn-close {
   width: 20px;
   height: 14px;
